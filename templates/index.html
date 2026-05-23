@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrediksiDiabetes — Deteksi Risiko Diabetes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Prediksi<span>Diabetes</span></div>
+        <ul>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#cara-pakai">Cara Pakai</a></li>
+            <li><a href="#prediksi" class="btn-nav">Cek Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-badge">Machine Learning Based</div>
+        <h1>Kenali Risiko<br><em>Diabestes Anda</em><br>Sejak Dini</h1>
+        <p>PrediksiDiabetes adalah aplikasi web yang menggunakan machine learning untuk membantu Anda memahami risiko diabetes berdasarkan data kesehatan Anda.</p>
+        <div class="hero-actions">
+            <a href="#prediksi" class="btn-primary">Mulai Prediksi</a>
+            <a href="#tentang" class="btn-ghost">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><span>95%</span><p>Akurasi Model</p></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span>&lt;3 detik</span><p>Waktu Analisis</p></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span>4 Data</span><p>Cukup untuk Prediksi</p></div>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="about">
+        <div class="about-label">Tentang Aplikasi</div>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Apa itu<br>PrediksiDiabetes?</h2>
+                <p>PrediksiDiabetes adalah aplikasi web yang menggunakan machine learning untuk membantu Anda memahami risiko diabetes berdasarkan data kesehatan Anda.</p>
+                <p>Aplikasi ini dirancang untuk memberikan prediksi yang cepat dan akurat, sehingga Anda dapat mengambil langkah pencegahan yang tepat untuk menjaga kesehatan Anda.</p>
+            </div>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Anilisi Instan</h3>
+                    <p>Analisis cepat dan akurat mengenai risiko diabetes Anda.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Perlindungan Data</h3>
+                    <p>Data kesehatan Anda dijaga tetap aman dan pribadi.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <h3>Rekomendasi Kesehatan</h3>
+                    <p>Dapatkan saran kesehatan yang dipersonalisasi berdasarkan hasil prediksi.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h3>Komunitas Dukungan</h3>
+                    <p>Bergabung dengan komunitas untuk berbagi pengalaman dan tips kesehatan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Pakai -->
+     <section id="cara-pakai" class="how-to-use">
+        <div class="how-to-use-label">Cara Pakai</div>
+        <h2 class="how-to-use-title">Langkah Mudah untuk Prediksi Risiko Diabetes</h2>
+        <div class="how-to-use-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Masukkan Data Kesehatan</h3>
+                <p>Isi data kesehatan Anda seperti usia, berat badan, dan riwayat keluarga.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Analisis Instan</h3>
+                <p>Klik tombol prediksi untuk mendapatkan hasil analisis risiko diabetes Anda dalam hitungan detik.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Dapatkan Rekomendasi</h3>
+                <p>Berdasarkan hasil prediksi, dapatkan rekomendasi kesehatan yang dipersonalisasi untuk menjaga kesehatan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediksi -->
+     <section id="prediksi" class="predict">
+        <div class="predict-inner">
+            <div class="predict-info">
+                <div class="about-label">Cek Sekarang</div>
+                <h2>Prediksi Risiko Diabetes Anda</h2>
+                <p>Masukkan data kesehatan Anda untuk mendapatkan prediksi risiko diabetes secara instan dan akurat.</p>
+                <ul class="tips">
+                    <li> Berat badan dalam kilogram</li>
+                    <li> Tinggi badan dalam meter</li>
+                    <li> Usia dalam tahun</li>
+                    <li> Hasil bersifat indikatif, bukan diagnosis</li>
+                </ul>
+            </div>
+
+            <div class="form-card">
+                <h3>Data Kesehatan</h3>
+                <div class="input-group">
+                    <label for="usia">Usia (tahun)</label>
+                    <input type="number" id="usia" placeholder="Contoh: 35">
+                </div>
+                <div class="input-group">
+                    <label for="berat_badan">Berat Badan (kg)</label>
+                    <input type="number" id="berat_badan" placeholder="Contoh: 70">
+                </div>
+                <div class="input-group">
+                    <label for="olahraga">Olahraga (jam/minggu)</label>
+                    <input type="number" id="olahraga" placeholder="Contoh: 3">
+                </div>
+                <div class="input-group">
+                    <label for="gula_harian">Konsumsi Gula (gram/hari)</label>
+                    <input type="number" id="gula_harian" placeholder="Contoh: 50">
+                </div>
+                <button class="btn-submit" onclick="predictDiabetes()">Prediksi Sekarang</button>
+                <div id="hasil" class="hasil-container">
+                </div>
+            </div>
+     </section>
+
+     <!-- Footer -->
+      <footer>
+        <div class="footer-inner">
+            <div class="logo">Prediksi<span>Diabetes</span></div>
+            <p>&copy; 2026 PrediksiDiabetes. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script>
+async function predictDiabetes() {
+  const btn = document.querySelector('.btn-submit');
+  const hasil = document.getElementById('hasil');
+  
+  const usia = document.getElementById('usia').value;
+  const berat = document.getElementById('berat_badan').value;
+  const olahraga = document.getElementById('olahraga').value;
+  const gula = document.getElementById('gula_harian').value;
+  
+  if (!usia || !berat || !olahraga || !gula) {
+    hasil.innerHTML = `<div class="hasil-box error"><p>⚠️ Mohon lengkapi semua data!</p></div>`;
+    return;
+  }
+  
+  btn.textContent = 'Menganalisis...';
+  btn.disabled = true;
+  
+  try {
+    const res = await fetch('/predict', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        usia: parseFloat(usia),
+        berat_badan: parseFloat(berat),
+        olahraga: parseFloat(olahraga),
+        gula_harian: parseFloat(gula)
+      })
+    });
+    const data = await res.json();
+    
+    if (data.error) {
+      hasil.innerHTML = `
+        <div class="hasil-box error">
+          <p>⚠️ ${data.error}</p>
+        </div>
+      `;
+      return;
+    }
+    
+    if (data.risiko === 'tinggi') {
+      hasil.innerHTML = `
+        <div class="hasil-box high-risk">
+          <p class="hasil-label">Hasil Prediksi</p>
+          <h3>🔴 RISIKO DIABETES TINGGI</h3>
+          <div class="hasil-confidence">Tingkat keyakinan: ${data.keyakinan}%</div>
+          <div class="hasil-divider"></div>
+          <div class="hasil-rekomendasi">
+            <strong> Rekomendasi:</strong>
+            <ul>
+              <li>Segera konsultasi ke dokter</li>
+            <li>Kurangi konsumsi gula harian</li>
+              <li>Tingkatkan frekuensi olahraga</li>
+              <li>Periksa gula darah secara rutin</li>
+            </ul>
+          </div>
+        </div>
+      `;
+    } else {
+      hasil.innerHTML = `
+        <div class="hasil-box low-risk">
+          <p class="hasil-label">Hasil Prediksi</p>
+          <h3>🟢 RISIKO DIABETES RENDAH</h3>
+          <div class="hasil-confidence">Tingkat keyakinan: ${data.keyakinan}%</div>
+          <div class="hasil-divider"></div>
+          <div class="hasil-rekomendasi">
+            <strong> Rekomendasi:</strong>
+            <ul>
+              <li>Pertahankan gaya hidup sehat</li>
+              <li>Konsumsi gula secukupnya</li>
+              <li>Olahraga rutin minimal 3x/minggu</li>
+              <li>Periksa kesehatan secara berkala</li>
+            </ul>
+          </div>
+        </div>
+      `;
+    }
+  } catch {
+    hasil.innerHTML = `<div class="hasil-box error"><p>⚠️ Terjadi kesalahan. Silakan coba lagi.</p></div>`;
+  } finally {
+    btn.textContent = 'Prediksi Sekarang';
+    btn.disabled = false;
+  }
+}
+
+// Enter key support
+document.querySelectorAll('.input-group input').forEach(input => {
+  input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') predictDiabetes();
+  });
+});
+</script>
+    
+
+      </script>
+</body>
+</html>
